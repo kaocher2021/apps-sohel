@@ -1,0 +1,1175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+.clr{
+    clear: both;
+}
+
+.container{
+    width: 974px;
+    margin: 0 auto;
+} 
+
+/*================= nav bar parts goes here =====================*/
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+}
+
+.nav-container{
+    display: flex;
+}
+
+.logo h2{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 20.8px;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.logo h5{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 20.8px;
+    color: #4c76ff;
+    font-weight: 900;
+}
+
+.logo{
+    width: 174px;
+    padding-top: 10px;
+    
+}
+
+.menu{
+    width: 800px;
+    text-align: right;
+}
+
+.menu ul li{
+    display: inline-block;
+    padding-left: 33px;
+}
+
+.menu ul li a{
+line-height: 46px;
+font-family: 'Lato', sans-serif;
+font-size: 12px;
+color: #fff;
+font-weight: 300;
+position: relative;
+}
+
+.menu ul li a::after{
+    position: absolute;
+    content:'';
+    background-color: #4c76ff;
+    top: -10px;
+    left: 0;
+    transition: all linear .3s;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+    height: 1px;
+}
+
+/*================= banner parts goes here =====================*/
+
+.banner-img{
+    background: url(../images/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.banner-overlay{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0,0.61);
+display: flex;
+justify-content: center;
+}
+
+.banner-text{
+    text-align: center;
+    align-self: center;
+}
+
+.banner-text h1{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 62px;
+    color: #fff;
+    font-weight: 900;
+    line-height: 2px;
+}
+
+.banner-text h2{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.banner-text h3{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.banner-text p{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.ban-bigt{
+    padding-bottom: 15px;
+}
+
+.ban-bigt h3{
+    color: #4763be;
+   
+   
+}
+
+.ban-bigt p{
+    margin-left: 14px;
+    word-spacing: 6px;
+}
+
+.banner-text span{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    word-spacing: 4px;
+   position: relative;
+   
+}
+
+.banner-text span::before{
+    position: absolute;
+    content:'';
+    width: 28px;
+    height: 1px;
+    top: 50%;
+    left: -23%;
+    transform: translateY(-50%);
+    background-color: #4c76ff;
+    
+}
+
+.banner-text span::after{
+    position: absolute;
+    content:'';
+    width: 28px;
+    height: 1px;
+    top: 60%;
+   right: -23%;
+    transform: translateY(-50%);
+    background-color: #4c76ff;
+}
+
+.social a{
+    color: #827e7f;
+    font-size: 18px;
+    margin-right: 18px;
+}
+.social{
+  
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transition: all linear .3s;
+}
+
+.social i:hover{
+    color: white;
+}
+
+/*================= Features parts goes here =====================*/
+
+#features{
+    padding-top: 60px;
+    padding-bottom: 105px;
+    background-color: #efefef;
+}
+
+.head-info{
+    text-align: center;
+    }
+
+.head-info h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: #4c76ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    
+}
+
+.head-info h4{
+    position: relative;
+    color: #bfbfbf;
+    font-size: 18px;
+}
+
+.head-info h4::before{
+position: absolute;
+content:'';
+width: 100px;
+height: 1px;
+top:50%;
+left: 53%;
+background-color: #bfbfbf;
+transform: translateY(-50%);
+}
+
+.head-info h4::after{
+    position: absolute;
+    content:'';
+    width: 100px;
+    height: 1px;
+    top:50%;
+    right: 53%;
+    background-color: #bfbfbf;
+    transform: translateY(-50%);
+    }
+
+ .feat-main{
+     padding-top: 60px;
+ }
+
+    .feat-img {
+        width: 40px;
+        text-align: center;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .feat-text {
+        width: 270px;
+        float: left;
+    }
+
+    .feat-text h2{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16.78px;
+        color: #062033;
+        font-weight: 600;
+        padding-bottom: 20px;
+        
+    }
+
+    .feat-text p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        color: #bfbfbf;
+        font-weight: 400;
+        line-height: 17.62px;
+        
+    }
+
+/*================= Services parts goes here =====================*/
+
+#services{
+    padding-top: 88px;
+    padding-bottom: 134px;
+}
+
+.service-head{
+    text-align: center;
+}
+.service-head p{
+    font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #282528;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 0 70px;
+        padding-bottom: 70px;
+}
+
+.service-item{
+    display: flex;
+     margin-bottom: 65px;
+    
+}
+
+.ser-icon{
+    width: 30px;
+   margin-right: 10px;
+}
+
+.ser-text{
+    width: 222px;
+   
+}
+
+.ser-text h3{
+    font-family: 'Open Sans', sans-serif;
+        font-size: 13.40px;
+        color: #282528;
+        font-weight: 700;
+        padding-bottom: 10px;
+}
+
+.ser-text p{
+    font-family: 'Open Sans', sans-serif;
+        font-size: 10.89px;
+        color: #282528;
+        font-weight: 400;
+        line-height: 20px;
+}
+
+
+
+#service{
+    padding-top: 64px;
+   
+}
+
+.service-main{
+    display: flex;
+   
+}
+
+.ser-item-left{
+    width: 311px;
+    margin-top: 50px;
+    
+}
+
+.ser-left{
+    display: flex;
+    margin-bottom: 60px;
+    
+    
+}
+
+.ser-left:hover{
+    background-color: #fefce9;
+}
+
+.ser-item-middle{
+    width: 312px;
+    margin-left: 15px;
+}
+
+.ser-item-right{
+    width: 311px;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
+.ser-icon{
+    width: 30px;
+    margin-right: 30px;
+}
+
+.ser-text{
+    width: 217px;
+   
+}
+
+.ser-text h3{
+    font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #282528;
+        font-weight: 700;
+}
+
+.ser-text p{
+    font-family: 'Open Sans', sans-serif;
+        font-size: 10px;
+        color: #444244;
+        font-weight: 400;
+        line-height: 20px;
+       
+        
+}
+
+.ser-head{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #444244;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0 70px;
+    padding-bottom: 70px;
+}
+
+/*================= works parts goes here =====================*/
+
+.work-head{
+    text-align: center;
+}
+
+.work-head h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: #4c76ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+
+.work-head {
+    color: #cccccc;
+    font-size: 18px;
+    
+}
+
+.work-head h4{
+    position: relative;
+}
+
+.work-head h4::before{
+    position: absolute;
+    content:'';
+    width: 90px;
+    height: 1px;
+    top: 50%;
+    left: 38%;
+    background-color:#cccccc;
+}
+
+.work-head h4::after{
+    position: absolute;
+    content:'';
+    width: 90px;
+    height: 1px;
+    top: 50%;
+    left: 53%;
+    background-color:#cccccc;
+}
+.work-head p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #6a6561;
+    font-weight: 300;
+    padding-bottom: 10px;
+    line-height: 17px;
+    padding: 0 90px;
+    padding-top: 30px;
+}
+
+#works{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.head-btn{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+button{
+    
+    border: 0;
+    background-color: transparent;
+    margin-left: 10px;
+    transition: all linear .3s;
+}
+
+.head-btn button a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #4c76ff;
+    border-radius: 10px;
+}
+
+.head-btn button a{
+    transition: all linear .3s;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #062033;
+    font-weight: 900;
+    padding: 8px 18px;
+ 
+}
+
+.work-item{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.work-gal-img{
+    width: 25%;
+    line-height: 0;   
+    
+}
+
+.work-gal-img{
+    position: relative;
+}
+
+.work-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.work-overlay:hover{
+    opacity: 1;
+    background-color: rgba(76, 118, 255,0.9);
+}
+
+.work-over-text{
+    align-self: center;
+}
+
+.work-over-text i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+}
+
+.work-over-text h4{
+    padding-top: 22px;
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.work-over-text p{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.head-fix{
+    text-align: center;
+}
+
+.work-head span{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #6a6561;
+    font-weight: 300;
+    padding: 0 115px;
+
+    }
+
+    /*================= team parts goes here =====================*/
+
+    #teamsec{
+        padding-bottom: 90px;
+       
+    }
+
+.team-head{
+    text-align: center;
+}
+
+.team-head h1{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: #4c76ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+
+.team-head h4{
+    position: relative;
+    color: #cccccc;
+}
+
+.team-head h4::before{
+    position: absolute;
+    content:'';
+    width: 90px;
+    height: 1px;
+    top: 50%;
+    left: 38%;
+    background-color:#cccccc;
+}
+
+.team-head h4::after{
+    position: absolute;
+    content:'';
+    width: 90px;
+    height: 1px;
+    top: 50%;
+    right: 38%;
+    background-color:#cccccc;
+}
+
+
+.team-head p{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #6a6561;
+    font-weight: 300;
+    padding-bottom: 10px;
+    line-height: 17px;
+    padding: 0 80px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+
+.team-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-item{
+    width: 30%;
+        
+}
+
+.team-img{
+    position: relative;
+}
+
+.team-overlay{
+text-align: center;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: rgba(76, 118, 255,0.95);
+opacity: 0;
+transition: all linear .3s;
+}
+
+.team-overlay:hover{
+    opacity: 1;
+}
+
+
+.team-text h4{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    line-height: 25px;
+    margin-top: 30px;
+    padding: 0 40px;
+    
+}
+
+.team-text p{
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+     padding: 0 20px;
+     padding-bottom: 50px;
+     line-height: 25px;
+}
+
+.social-tbtn a{
+    margin-left: 10px;
+    
+}
+
+.social-tbtn a i{
+    padding-top: 8px;
+    width: 36px;
+    height:36px;
+    background-color: rgba(0, 0, 0,0.30);
+    color: white;
+    font-size: 20px;
+}
+
+.social-tbtn{
+   margin-right: 20px;
+   margin-top: 40px;
+}
+
+.team-btm h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #062033;
+    font-weight: 600;
+    padding-bottom: 5px;
+    transition: all linear .3s;
+}
+
+.team-btm h4:hover{
+    color: #0eb493;
+}
+
+.team-btm{
+    padding-top: 10px;
+}
+
+.team-btm p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #c4c7c9;
+    font-weight: 600;
+}
+
+/*================= Funfact parts goes here =====================*/
+
+#funfact{
+    padding-bottom: 65px;
+}
+
+.fun-img{
+    position: relative;
+}
+
+.fun-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(6, 32, 51,0.80);
+    
+}
+
+.fun-head{
+    text-align: center;
+   padding-top: 70px;
+    
+}
+
+.fun-head h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #4c76ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.fun-head a i{
+    color: white;
+    position: relative;
+    font-size: 15px;
+}
+
+.fun-head h5:before{
+    position: absolute;
+    content:'';
+    width: 67px;
+    height: 1px;
+    top: 25%;
+    left: 52%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+.fun-head h5:after{
+    position: absolute;
+    content:'';
+    width: 67px;
+    height: 1px;
+    top: 25%;
+    right: 52%;
+    background-color: white;
+    transform: translateY(-50%);
+}
+
+
+.fun-main{
+    display: flex;
+   justify-content: space-evenly;
+}
+
+.fun-item{
+    width: 145px;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.fun-item a i{
+    padding-top: 30px;
+    font-size: 30px;
+    color: white;
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+    border: 1px solid #616c77;
+    
+}
+
+.fun-item h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.fun-item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+/*================= Lets Discuss parts goes here =====================*/
+
+#discuss{
+    padding-bottom: 50px;
+}
+
+.head-dis{
+    text-align: center;
+}
+
+.head-dis h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: #4c76ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.head-dis h4 a i{
+    color: #d6d6d6;
+    font-size: 20px;
+}
+
+.head-dis h4{
+    position: relative;
+}
+
+.head-dis h4::before{
+    position: absolute;
+    content:'';
+    width: 90px;
+    height: 1px;
+    top: 50%;
+    left: 52%;
+    background-color: #d6d6d6;
+}
+
+.head-dis h4::after{
+    position: absolute;
+    content:'';
+    width: 90px;
+    height: 1px;
+    top: 50%;
+    right: 52%;
+    background-color: #d6d6d6;
+}
+
+.head-dis p{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #455967;
+    font-weight: 300;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.dis-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dis-item-left{
+    width: 25%;
+    text-align: left;
+    
+}
+
+.dis-item-mid{
+    width: 60%;
+}
+
+.dis-item-right{
+    width: 2%;
+   margin-top: 30px;
+    
+}
+
+.dis-item-right a i{
+    padding: 5px 0;
+}
+
+.dis-left-head h4{
+    line-height: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #112739;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.dis-left-para p{
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #9aa0a4;
+    font-weight: 400;
+ 
+}
+
+.dis-left-para{
+    padding: 0 100px 0 0;
+}
+
+.dis-mid-head h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #062033;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.form-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-name{
+    width: 50%;
+}
+.form-name label{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #bec1c4;
+}
+
+.form-name input{
+    width: 90%;
+    border-style: none none solid none;
+}
+.form-email{
+    width: 50%;
+    
+}
+
+.form-email label{
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: #bec1c4;
+}
+.form-email input{
+    border-style: none none solid none;
+    width:90%;
+}
+
+.form-second-main{
+    margin-top: 40px;
+    text-align: left;
+}
+.form-second-main label {
+    display: block;
+    color: #bec1c4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+
+.form-second-main textarea{
+    border-style: none none solid none;
+    width: 95%;
+    resize: none;
+    
+}
+
+.form-second-main h3{
+
+    display: inline-block;
+}
+
+.form-second-main h3 a i{
+    color: #547cff;
+    margin-right: 5px;
+    
+}
+
+
+.form-second-main h4{
+   color: #7d7d7d;
+    display: inline-block;
+   
+}
+
+.sent{
+    text-align: right;
+    padding: 0 26px;
+    padding-top: 10px;
+}
+
+
+/*=================footer parts goes here =====================*/
+
+#footer{
+    background-color:#010305;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left{
+    width: 25%;
+}
+
+.footer-mid{
+    width: 25%;
+}
+
+.footer-right{
+    width: 35%;
+}
+
+.footer-left h2{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: #fff;
+    font-weight:900;
+}
+
+.footer-left h3{
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    color: #4c76ff;
+    font-weight:900;
+}
+
+
+.footer-left p{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: #fff;
+    font-weight:300;
+    line-height: 22px;
+    padding-top: 10px;
+}
+
+.footer-mid h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight:900;
+    padding-bottom: 38px;
+}
+
+.footer-mid h4 i{
+    width: 16px;
+    height: 13px;
+    font-weight: 200;
+}
+.footer-mid h4{
+    
+    color: white;
+    padding: 15px 18px 15px 200px;
+    border: 1px solid #fff;
+}
+
+.footer-mid p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #cdcfd1;
+    font-weight: 700;
+    padding-top: 23px;
+}
+
+.footer-right h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.footer-right p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.footer-right span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0 50px;
+    
+}
+
+.footer-right-main{
+    display: flex;
+}
+
+.fo-r-item{
+    width: 50%;
+}
+
+.fo-r-item2 p{
+    padding: 0 80px;
+    margin-top: 50px;
+    line-height: 28px;
+}
